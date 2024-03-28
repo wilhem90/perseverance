@@ -8,8 +8,18 @@ async function getComponent(url){
 }
 
 async function verifyAuth() {
-    if (1 === 1) {
-        const body = document.getElementById('body-content')
-        body.innerHTML = await getComponent('./components/login/login.html')
+    const auth = 1
+    const body = document.getElementById('body-content')
+    if (auth === 1) {
+        body.innerHTML = await getComponent('./pages/login/login.html')
+    }
+    else {
+        if (auth === 2) {
+            body.innerHTML = await getComponent('./components/login/login.html')
+            
+        }if (auth === 3) {
+            body.innerHTML = await getComponent('./components/login/login.html')
+            
+        }
     }
 }
