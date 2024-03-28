@@ -10,6 +10,6 @@ async function getComponent(url){
 async function verifyAuth() {
     if (1 === 1) {
         const body = document.getElementById('body-content')
-        body.innerHTML = await getComponent('/components/login/login.html')
+        body.innerHTML = await getComponent('./components/login/login.html')
     }
 }
